@@ -1,5 +1,5 @@
 # NeoSpace
-A Neovim, iTerm2 configuration inspired by Spacemacs.
+A Neovim and iTerm2 configuration inspired by Spacemacs.
 
 ## Credits
 Based on:
@@ -97,7 +97,7 @@ Install the fonts and then use them in `iTerm > Preferences > Profiles > Text > 
 ![js](screenshots/js.png)
 
 ##### Airline
-![airline](screenshots/airline.png)
+![airline](screenshots/neospace-airline.png)
 
 ##### Icon
 ![icon](screenshots/icon.png)
