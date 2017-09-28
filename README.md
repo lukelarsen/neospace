@@ -23,7 +23,9 @@ You do not need to go through each section. Just follow the directions for what 
 ### Neovim and init.vim
 #### 1. Install Neovim
 I recommend using brew if you are on macOS.
-```brew install neovim```
+```
+brew install neovim
+```
 
 If not see the [downloads page](https://github.com/neovim/neovim/wiki/Installing-Neovim).
 
@@ -31,8 +33,10 @@ If not see the [downloads page](https://github.com/neovim/neovim/wiki/Installing
 
 Run this to install:
 
-```curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim```
+```
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
 
 or see the [vim-plug page](https://github.com/junegunn/vim-plug) for more information.
 
@@ -40,10 +44,14 @@ or see the [vim-plug page](https://github.com/junegunn/vim-plug) for more inform
 Navigate to `~/.config/nvim/` and place the `init.vim` file in this repo in there.
 
 Then run Neovim.
-```nvim```
+```
+nvim
+```
 
 Install all the plugins.
-```:PlugInstall```
+```vim
+:PlugInstall
+```
 
 Restart Neovim and you are good to go.
 
