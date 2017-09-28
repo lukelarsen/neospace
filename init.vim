@@ -487,36 +487,6 @@ let g:ale_open_list = 0
 
 
 
-
-
-
-
-
-" Disable menu shortcut keys, and punctuation shortcuts, for the vim-move
-" plugin
-" :set winaltkeys=no
-" let g:move_key_modifier = 'M'
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 "===================================="
 "   BACKUP
 "===================================="
