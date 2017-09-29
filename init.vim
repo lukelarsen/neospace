@@ -59,6 +59,8 @@
 "       - Fuzzy search across project
 "       - Fuzzy search recently for opened files
 "       - Navigate the file tree
+"       - Navigate windows with <SPACE>Number
+"       - Navigate up the file tree when <space>ff is open
 "       - Open this config
 "       - Source config file
 "       - Open prev ripgrep search
@@ -67,7 +69,6 @@
 "       - Save File
 "       - File word under cursor
 "       - Toggle between buffers
-"       - Switch between windows
 "   PLUGIN CONFIG
 "       - SyntaxAttr
 "       - Deoplete
@@ -277,11 +278,23 @@ nnoremap <leader><Esc> :noh<CR><CR>
 " Fuzzy search with <SPACE> /
 :nnoremap <leader>/ :Ag<CR>
 
-" Fuzzy search recently opened files with <SPACE> bb
-:nnoremap <leader>bb :History<CR>
+" Show buffers with <leader> bb
+:nnoremap <leader>bb :ls<CR>:b
+
+" Fuzzy search recent history of files with <SPACE> hh
+:nnoremap <leader>hh :History<CR>
 
 " Navigate the file tree with <SPACE> ff
-:nnoremap <leader>ff :Vexplore<CR>
+:nnoremap <leader>ff :Explore<CR>
+
+" Navigate windows with <SPACE>Number
+:nnoremap <leader>1 1<C-w><C-w>
+:nnoremap <leader>2 2<C-w><C-w>
+:nnoremap <leader>3 3<C-w><C-w>
+:nnoremap <leader>4 4<C-w><C-w>
+
+" Navigate up the file tree when <space>ff is open
+:nmap <C-h> -
 
 " Open this VIM config file
 " (http://learnvimscriptthehardway.stevelosh.com/chapters/07.html)
@@ -311,14 +324,6 @@ nnoremap <leader><Esc> :noh<CR><CR>
 " Toggle between two buffers with <TAB>
 :nnoremap <tab> <C-^>
 
-" Switch between windows (<CTRL> j, <CTRL> k, etc.)
-" https://stackoverflow.com/a/6053341/1090619
-:nmap <silent> <C-h> :wincmd h<CR>
-:nmap <silent> <C-j> :wincmd j<CR>
-:nmap <silent> <C-k> :wincmd k<CR>
-:nmap <silent> <C-l> :wincmd l<CR>
-
-
 
 
 
@@ -331,7 +336,7 @@ nnoremap <leader><Esc> :noh<CR><CR>
 " --------------------
 
 " Show color map names to help with syntax highlighting
-map -a :call SyntaxAttr()<CR>
+map <leader>-a :call SyntaxAttr()<CR>
 
 
 
