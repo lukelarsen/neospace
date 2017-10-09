@@ -18,7 +18,7 @@
 "       - vim-rooter
 "       - ultisnips
 "       - vim-snippets
-"       - vim-fugitive
+"       - vimagit
 "       - vim-gitgutter
 "       - vim-merginal
 "       - vim-trailing-whitespace
@@ -140,7 +140,7 @@ Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 
 " Git support
-Plug 'tpope/vim-fugitive'
+Plug 'jreybert/vimagit'
 Plug 'airblade/vim-gitgutter'
 Plug 'idanarye/vim-merginal'
 
@@ -373,13 +373,10 @@ let g:gitgutter_sign_removed = '×'
 
 
 
-" Fugitive
+" Vimagit
 " --------------------
 
-" Git Fugitive shortcuts (https://stackoverflow.com/a/28916959/1090619)
-nnoremap <Leader>gs :Gstatus<CR>
-nnoremap <Leader>gd :Gdiff<CR>
-nnoremap <Leader>gb :Gblame<CR>
+nnoremap <Leader>gs :Magit<CR>
 
 
 
