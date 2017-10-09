@@ -183,6 +183,9 @@ Plug 'vim-scripts/Emmet.vim'
 " Edit surrounding things ("<
 Plug 'tpope/vim-surround'
 
+" Auto Pairs for finishing )}]
+Plug 'jiangmiao/auto-pairs'
+
 call plug#end()
 
 
@@ -281,11 +284,17 @@ nnoremap <leader><Esc> :noh<CR><CR>
 " Show buffers with <leader> bb
 :nnoremap <leader>bb :ls<CR>:b
 
+" Delete active buffer with <space>bd
+:nnoremap <leader>bd :b#<bar>bd#<CR>
+
 " Fuzzy search recent history of files with <SPACE> hh
 :nnoremap <leader>hh :History<CR>
 
 " Navigate the file tree with <SPACE> ff
 :nnoremap <leader>ff :Explore<CR>
+
+" Navigate windows with <SPACE>Number
+:nnoremap <leader>sp :vsp<CR>
 
 " Navigate windows with <SPACE>Number
 :nnoremap <leader>1 1<C-w><C-w>
@@ -398,6 +407,9 @@ let g:ale_set_quickfix = 1
 nmap <silent> <C-[> <Plug>(ale_previous_wrap)
 nmap <silent> <C-]> <Plug>(ale_next_wrap)
 
+" Keep error gutter open all the time. Prevents skipping of the UI
+let g:ale_sign_column_always = 1
+
 
 
 " Sneak
@@ -485,8 +497,11 @@ autocmd FileType javascript set formatprg=prettier-eslint\
 
 let g:ale_linters = {
 \   'html': [],
+\   'css': ['stylelint'],
 \}
+
 let g:ale_open_list = 0
+
 
 
 
