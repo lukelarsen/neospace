@@ -33,7 +33,8 @@
 "       - vim-dirvish
 "       - vim-move
 "       - vim-prettier
-"       - Emmet.vim
+"       - webapi-vim
+"       - emmet
 "       - vim-surround
 "   APPEARENCE
 "       - NeoVim Theme
@@ -67,7 +68,7 @@
 "       - Close Current Buffer
 "       - Maximize Window
 "       - Save File
-"       - File word under cursor
+"       - Find word under cursor
 "       - Toggle between buffers
 "   PLUGIN CONFIG
 "       - SyntaxAttr
@@ -177,8 +178,11 @@ Plug 'matze/vim-move'
 " 	\ 'do': 'yarn install',
 " 	\ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql'] }
 
+" Web API Vim
+Plug 'mattn/webapi-vim'
+
 " CSS/HTML Completion
-Plug 'vim-scripts/Emmet.vim'
+Plug 'mattn/emmet-vim'
 
 " Edit surrounding things ("<
 Plug 'tpope/vim-surround'
@@ -426,6 +430,15 @@ let g:UltiSnipsExpandTrigger="<C-e>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
+
+
+" Emmet
+" --------------------
+
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
+let g:user_emmet_settings = webapi#json#decode(join(readfile(expand('~/.config/nvim/.snippets_custom.json')), "\n"))
+imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 
 
 " Ripgrep
