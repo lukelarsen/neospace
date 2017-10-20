@@ -508,6 +508,7 @@ autocmd FileType javascript set formatprg=prettier-eslint\
 let g:ale_linters = {
 \   'html': [],
 \   'css': ['stylelint'],
+\   'javascript': ['eslint'],
 \}
 
 let g:ale_open_list = 0
