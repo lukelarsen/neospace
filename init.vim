@@ -252,7 +252,6 @@ set smartcase
 " Clipboard support
 set clipboard+=unnamedplus
 
-
 " Copy file path to clipboard: https://stackoverflow.com/a/954336
 :nmap cp :let @+ = expand("%:p")
 
@@ -335,7 +334,7 @@ nnoremap <leader><Esc> :noh<CR><CR>
 :nnoremap <leader>* :Rg<CR>
 
 " Toggle between two buffers with <TAB>
-:nnoremap <tab> <C-^>
+:nnoremap <leader><tab> <C-^>
 
 
 
@@ -405,11 +404,20 @@ let g:airline#extensions#ale#enabled = 1
 let g:ale_set_quickfix = 1
 
 " Go to prev/next lint error in your buffer using <CTRL> ]
-nmap <silent> <C-[> <Plug>(ale_previous_wrap)
-nmap <silent> <C-]> <Plug>(ale_next_wrap)
+nmap <silent> <leader>ep <Plug>(ale_previous_wrap)
+nmap <silent> <leader>en <Plug>(ale_next_wrap)
 
 " Keep error gutter open all the time. Prevents skipping of the UI
 let g:ale_sign_column_always = 1
+
+" Linters
+let g:ale_linters = {
+\   'html': [],
+\   'css': ['stylelint'],
+\   'javascript': ['eslint'],
+\}
+
+let g:ale_open_list = 0
 
 
 
@@ -504,15 +512,6 @@ autocmd FileType javascript set formatprg=prettier-eslint\
             \ --trailing-comma\ all\
             \ --no-bracket-spacing\
             \ --stdin
-
-let g:ale_linters = {
-\   'html': [],
-\   'css': ['stylelint'],
-\   'javascript': ['eslint'],
-\}
-
-let g:ale_open_list = 0
-
 
 
 
