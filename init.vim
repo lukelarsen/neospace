@@ -20,7 +20,6 @@
 "       - vim-snippets
 "       - vimagit
 "       - vim-gitgutter
-"       - vim-merginal
 "       - vim-trailing-whitespace
 "       - vim-vinegar
 "       - jedi-vim
@@ -143,7 +142,6 @@ Plug 'honza/vim-snippets'
 " Git support
 Plug 'jreybert/vimagit'
 Plug 'airblade/vim-gitgutter'
-Plug 'idanarye/vim-merginal'
 
 " Highlights trailing whitespace. Fix it with :FixWhitespace
 Plug 'bronson/vim-trailing-whitespace'
