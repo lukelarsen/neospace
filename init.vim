@@ -21,7 +21,6 @@
 "       - vimagit
 "       - vim-gitgutter
 "       - vim-trailing-whitespace
-"       - vim-vinegar
 "       - jedi-vim
 "       - vim-bookmarks
 "       - neospace-theme
@@ -145,9 +144,6 @@ Plug 'airblade/vim-gitgutter'
 
 " Highlights trailing whitespace. Fix it with :FixWhitespace
 Plug 'bronson/vim-trailing-whitespace'
-
-" De-clutters file navigation with netrw, and adds features to it
-Plug 'tpope/vim-vinegar'
 
 " Python support for VIM
 Plug 'davidhalter/jedi-vim'
