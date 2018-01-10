@@ -34,6 +34,9 @@
 "       - webapi-vim
 "       - emmet
 "       - vim-surround
+"       - vim-autopairs
+"       - vim-jsx
+"       - vim-graphql
 "   APPEARENCE
 "       - NeoVim Theme
 "       - Enable Syntax Highlighting
@@ -163,9 +166,13 @@ Plug 'djoshea/vim-autoread'
 " Auto-format files
 Plug 'Chiel92/vim-autoformat'
 
-Plug 'tpope/vim-eunuch'
-Plug 'justinmk/vim-dirvish'
+" Shell Commands in Vim
+" Plug 'tpope/vim-eunuch'
 
+" Path Navigator
+" Plug 'justinmk/vim-dirvish'
+
+" Move lines up and down
 Plug 'matze/vim-move'
 
 " Plug 'prettier/vim-prettier', {
@@ -183,6 +190,15 @@ Plug 'tpope/vim-surround'
 
 " Auto Pairs for finishing )}]
 Plug 'jiangmiao/auto-pairs'
+
+" Javascript Highlighting
+Plug 'pangloss/vim-javascript'
+
+" JSX Syntax Highlighting
+Plug 'mxw/vim-jsx'
+
+" GraphQL Syntax Highlighting
+Plug 'jparise/vim-graphql'
 
 call plug#end()
 
