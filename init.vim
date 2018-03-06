@@ -35,6 +35,7 @@
 "       - emmet
 "       - vim-surround
 "       - vim-autopairs
+"       - vim-javascript
 "       - vim-jsx
 "       - vim-graphql
 "   APPEARENCE
@@ -84,6 +85,7 @@
 "   LANGUAGE SPECIFIC
 "       - Python
 "       - Javascript
+"       - JSX
 "   BACKUP
 
 
@@ -346,6 +348,9 @@ nnoremap <leader><Esc> :noh<CR><CR>
 " Toggle between two buffers with <TAB>
 :nnoremap <leader><tab> <C-^>
 
+" Paste from the 0 register with <SPACE>p
+:nnoremap <leader>pp "0p
+
 
 
 
@@ -522,6 +527,12 @@ autocmd FileType javascript set formatprg=prettier-eslint\
             \ --trailing-comma\ all\
             \ --no-bracket-spacing\
             \ --stdin
+
+
+
+" JSX
+" --------------------
+let g:jsx_ext_required = 0
 
 
 
