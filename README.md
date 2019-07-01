@@ -70,7 +70,7 @@ If you just want the color theme see the neospace.itermcolors theme [here](https
 
 #### .zshrc
 This contains some code you might find useful. You'll probably need to copy the contents in to your own file.
-It will call the neospace zsh-theme and make the titlebar of iTerm2 dark.
+It will call the neospace zsh-theme.
 
 #### neospace.zsh-theme
 This will add some coloring to iterm when in a git repo.
