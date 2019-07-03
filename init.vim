@@ -37,6 +37,7 @@
 "       - vim-autopairs
 "       - vim-javascript
 "       - vim-jsx
+"       - vim-typescript
 "       - vim-graphql
 "   APPEARENCE
 "       - NeoVim Theme
@@ -198,6 +199,9 @@ Plug 'pangloss/vim-javascript'
 
 " JSX Syntax Highlighting
 Plug 'mxw/vim-jsx'
+
+" Typescript Syntax Highlighting
+Plug 'leafgarland/typescript-vim'
 
 " GraphQL Syntax Highlighting
 Plug 'jparise/vim-graphql'
