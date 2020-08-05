@@ -37,6 +37,7 @@
 "       - vim-autopairs
 "       - vim-javascript
 "       - vim-jsx
+"       - vim-tsx
 "       - vim-typescript
 "       - vim-graphql
 "   APPEARENCE
@@ -199,6 +200,9 @@ Plug 'pangloss/vim-javascript'
 
 " JSX Syntax Highlighting
 Plug 'mxw/vim-jsx'
+
+" TSX Syntax Highlighting
+Plug 'ianks/vim-tsx'
 
 " Typescript Syntax Highlighting
 Plug 'leafgarland/typescript-vim'
